@@ -1,0 +1,25 @@
+time complexity and stuff. the extra's are in the book like the drawings. 
+
+
+
+data structures is managing data like a strucutre and need a massive storage. because data is a lot. 
+
+first arrays:
+
+array = [1,4,5,6,8,9] -> 1 line of arrays in python. 
+def linearSearch(array, Target):
+  i = 0
+  matchIndex = -1 # null value because 0 in index is the 1st value
+  while i <len(array) and matchIndex == -1:
+    if array[i] == Target:
+      matchIndex = i
+    i = i + 1
+  return matchIndex
+
+arr = [3,6,8,9,1,9,10,45]
+m = linearSearch(arr, 1)
+print(m)
+
+# this is linear search. 
+# if we make it 11 of target, worst case scenario, it will output -1 because
+# none will match 11, so matchIndex doesnt change.
